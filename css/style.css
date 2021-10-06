@@ -1,0 +1,370 @@
+/* Fonte formulario de sign in */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
+
+/* Ajuste de Tela */
+@media (min-width: 721px) {
+  .mobile {
+    display: none;
+  }
+  .btnParalax {
+    height: 50px;
+    width: 150px;
+  }
+  .itemLista {
+    height: 300px;
+    width: 350px;
+    margin: auto 10px;
+    border-style: solid;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+  .nav-item {
+    border-right: 1.5px solid grey;
+    border-left: 1.5px solid grey;
+    padding: 4px 20px;
+  }
+  .nav-item:hover {
+    background-color: whitesmoke;
+    transition: 0.3s;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+
+  .btn-outline-success {
+    margin-right: 15px;
+    margin-left: 30px;
+  }
+
+  .btn-outline-success:hover {
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* ajuste Pagina Ficha de filme */
+  .posterTrailer {
+    flex-direction: row !important;
+    align-items: flex-start;
+    justify-items: center;
+    margin: 0;
+  }
+  .posterContainer {
+    width: 35% !important;
+  }
+  .trailerContainer {
+    width: 65% !important;
+  }
+  .trailer {
+    width: 90%;
+    margin: 15px auto;
+    height: calc(65vw / 1.7);
+  }
+  .banner {
+    background-image: url("../img/o-esquadrao-suicida.jpeg");
+  }
+  .descricaoBanner {
+    width: 50%;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .desktop {
+    display: none;
+  }
+  .btnParalax {
+    height: 35px;
+    width: 200px;
+    font-size: small;
+  }
+  .itemLista {
+    margin: 10px 5px;
+    height: auto;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+  .nav-item {
+    border-bottom: 3px solid grey;
+  }
+  .dropdown-menu {
+    min-height: none !important;
+    min-width: 45;
+  }
+  .nav-item:hover {
+    background-color: whitesmoke;
+    transform: scale(1.1);
+    transition: 0.3s;
+    margin: 2% auto;
+    font-weight: bold;
+  }
+  .btn-outline-success {
+    font-size: medium;
+    max-height: 60px;
+    padding: 10px;
+  }
+
+  .btn-outline-success:hover {
+    margin: 2% auto;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .navCel {
+    padding: 0;
+    margin: 0;
+  }
+  .banner {
+    background-image: url("../img/posterSuicideSquad.jpg");
+    background-size: cover;
+  }
+  .descricaoBanner {
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: lightgray;
+    display: column;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    font-size: smaller;
+    padding: 10px;
+  }
+  .indicacao {
+    transform: scale(0.6);
+  }
+  .formContainer {
+    height: 82vh;
+    margin: 0 auto;
+  }
+  .formulario {
+    background-color: rgb(0, 0, 0, 0.6);
+    min-width: 85vw !important;
+    max-width: 300px;
+    width: 100%;
+    padding: 25px 20px !important;
+    /* margin: 0 !important; */
+  }
+  .formulario > input {
+    max-width: 80vw;
+  }
+  .formulario > button {
+    max-width: 80vw;
+  }
+}
+
+/* Botões */
+.btn--menu {
+  height: 10vh;
+  width: auto;
+}
+
+.btnParalax {
+  background-color: red;
+  border-style: none;
+}
+
+/* Header */
+.header {
+  min-height: 50px;
+  height: 5vh;
+  background-color: orange;
+}
+.logo {
+  max-height: 5vh;
+  width: auto;
+  padding-left: 15px;
+}
+.logo:hover {
+  transform: scale(1.2, 1.2);
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.3s;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+.navbar-toggler-icon {
+  border-style: solid !important;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 !important;
+}
+
+.dropdown-menu {
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-align: center;
+  background-color: orange;
+}
+
+/* Body */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgba(255, 166, 0, 0.5);
+}
+.containerBanner {
+  width: 90%;
+  height: 70vh;
+  margin: 15px auto;
+}
+
+.banner {
+  background-color: rgba(255, 166, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position: left;
+  background-position: 0 0;
+  background-attachment: fixed;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.containerLista {
+  padding: 25px auto;
+  margin: 25px;
+}
+
+.itemLista {
+  background-color: rgba(255, 166, 0, 0.5);
+  border-style: solid;
+  border-width: 2pt;
+  border-color: orange;
+}
+
+.itemLista > h3 {
+  font-size: smaller;
+  padding: 5px;
+}
+
+.itemLista > p {
+  font-size: smaller;
+  padding: 0 5px 5px 5px;
+}
+
+.itemLista:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.imagemLista {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.idicacao {
+  display: inline;
+  max-height: 16px;
+}
+.formulario {
+  background-color: rgb(0, 0, 0, 0.6);
+  min-height: 150px;
+  min-width: 400px;
+  max-width: 40%;
+  max-height: 40%;
+  border-radius: 25px;
+  color: white;
+  padding: 25px;
+}
+.formulario > p {
+  text-align: left;
+  font-family: Poppins;
+  font-size: larger;
+  color: goldenrod;
+}
+.formulario > input {
+  margin-bottom: 15px;
+  width: 80%;
+}
+.formulario > button {
+  width: 80%;
+  border-style: none;
+  box-shadow: none;
+  color: white;
+  background-color: darkorange;
+}
+.formContainer {
+  height: 82vh;
+  width: 95vw;
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  height: cover;
+}
+.menuFooter {
+  list-style: none;
+  color: darkgray;
+  padding: 10px auto;
+  height: 100%;
+}
+.itemMenuFooter {
+  list-style: none;
+  color: darkgray;
+  padding: 5px;
+}
+.itemMenuFooter > a {
+  text-decoration: none;
+  color: darkgray;
+}
+
+/* Pagina ficha de filme */
+.titulo {
+  text-align: center;
+  color: darkgray;
+  text-decoration: bold;
+  margin: 15px auto;
+}
+.posterTrailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0px !important;
+}
+.posterContainer {
+  width: 100%;
+  margin: 8px 0px !important;
+}
+.poster {
+  width: 60%;
+}
+.trailerContainer {
+  width: 100%;
+  height: auto;
+  margin: 8px auto !important;
+}
+.tituloTrailer {
+  text-align: center;
+  color: darkgray;
+  text-decoration: bold;
+  margin: 15px auto;
+}
+.tituloSinopse {
+  text-align: center;
+  color: darkgray;
+  text-decoration: bold;
+  margin: 15px auto;
+}
+.sinopseContainer {
+  margin: 10px auto;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 25px;
+  color: darkgray;
+  font-size: large;
+  width: 90%;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DH max - Login</title>
+    <!-- style bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- scripts bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Paralax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- owl carrousel -->
+    <link rel="stylesheet" href="./css/owlCarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css" />
+
+    <!-- style personalizado -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header para desktop, abaixo de 720p trocamos para display:none -->
+    <header class="header desktop row align-items-center justify-content-end">
+      <div class="col-2 container-fluid">
+        <a href="./index.html"
+          ><img src="img/logo-dh-max.png" alt="Logo DH Max" class="logo"
+        /></a>
+      </div>
+      <nav class="col-10 navDesk">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="fichaSuicideSquad.html">Ação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaMyHeroAcademia.html">Animação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaAHoraDoRush.html">Comédia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaCaminhosDaMemoria.html">Ficção</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaNuncaDigaSeuNome.html">Terror</a>
+          </li>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            onclick="location.href='LogIn.html'"
+          >
+            Entrar
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <!-- header para mobile, acima de 720p trocamos para display:none -->
+    <!-- usado um dropdownmenu a partir do bootstrap -->
+    <header class="header mobile row align-items-center justify-content-start">
+      <nav class="navbar-dark header dropdown col-2 navCel">
+        <button
+          class="navbar-toggler navbar--button"
+          type="button"
+          id="dropdownMenuButton2"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li class="nav-item">
+            <a class="nav-link" href="fichaSuicideSquad.html">Ação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaMyHeroAcademia.html">Animação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaAHoraDoRush.html">Comédia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaCaminhosDaMemoria.html">Ficção</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fichaNuncaDigaSeuNome.html">Terror</a>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-success my-2 my-sm-0 btn-entrar"
+              onclick="window.location.href = 'LogIn.html'"
+            >
+              Entrar
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-4 container-fluid">
+        <a href="./index.html"
+          ><img src="img/logo-dh-max.png" alt="Logo DH Max" class="logo"
+        /></a>
+      </div>
+    </header>
+    <div
+      class="d-flex flex-column justify-content-around align-items-center formContainer"
+    >
+      <form
+        class="d-flex flex-column justify-content-around align-items-center formulario"
+        action=""
+      >
+        <!-- <div class="d-flex flex-column justify-content-around align-items-center"> -->
+        <p class="row">Entrar</p>
+        <input type="email" placeholder="E-mail" />
+        <input type="text" placeholder="senha" />
+        <!-- </div> -->
+
+        <button class="signInFormBut" type="submit">Entrar</button>
+      </form>
+    </div>
+    <footer class="footer row">
+      <div class="col-4">
+        <ul
+          class="menuFooter d-flex flex-column align-items-center justify-content-center"
+        >
+          <li class="itemMenuFooter">
+            <a href="./index.html"
+              ><img src="img/logo-dh-footer.png" alt="Logo DH Max" class="logo"
+            /></a>
+          </li>
+          <li class="itemMenuFooter">DH Max © 2021</li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <ul
+          class="menuFooter d-flex flex-column align-items-center justify-content-center"
+        >
+          <li class="itemMenuFooter">
+            <a
+              href="https://www.instagram.com/digitalhousebrasil/"
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li class="itemMenuFooter">
+            <a
+              href="https://www.facebook.com/digitalhousebrasil"
+              target="_blank"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <ul
+          class="menuFooter d-flex flex-column align-items-center justify-content-center"
+        >
+          <li class="itemMenuFooter">
+            <a href="https://twitter.com/digitalhouseBR" target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li class="itemMenuFooter">
+            <a
+              href="https://www.linkedin.com/school/digital-house-brasil/"
+              target="_blank"
+              >linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
